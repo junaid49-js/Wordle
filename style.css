@@ -1,0 +1,264 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #383838;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+h2{
+    font-size: 2rem;
+}
+.navbar{
+    padding: 1rem;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-item {
+    flex: 1;
+  }
+  .secondNav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+
+.secondNav .input{
+  height: 50px;
+  width: 50px;
+  }  
+.rightIcons{
+    display: flex;
+    gap: 1rem;
+    display: flex;
+    justify-content: end;
+}
+.box{
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+}
+.wordleBox{
+    flex: 1;
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.wordleBox .input{
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wordleBox .first{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+.wordleBox .second{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+.wordleBox .third{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+.wordleBox .fourth{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+.wordleBox .fifth{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+.wordleBox .sixth{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+.input{
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.input{
+  height: 60px;
+  width: 60px;
+  background-color: #f3efe0;
+  border-style: none;
+  border-radius: 10%;
+  text-align: center;
+  margin-bottom: 4px;
+}
+
+.firstLetterRow{
+  background-color: #f3efe0;
+}
+
+.secondLetterRow{
+  background-color: #f3efe0;
+}
+
+.thirdLetterRow{
+  background-color: #f3efe0;
+}
+
+.fourthLetterRow{
+  background-color: #f3efe0;
+}
+
+.fifthLetterRow{
+  background-color: #f3efe0;
+}
+
+.sixthLetterRow{
+  background-color: #f3efe0;
+}
+
+.keys{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:60px;
+    background-color: #f3efe0;
+    width: 40px;
+    padding: 5px;
+    border-radius: 10%;
+}
+
+.upperRow, .middleRow, .bottomRow, .otherKeys{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 5px;
+}
+#enterKey{
+    width: 50px;
+}
+#backspace{
+    width: 40px;
+}
+
+.descBox{
+    display: none;
+}
+
+.keyboard{
+    height: 20vh;
+}
+
+.correct {
+  background-color: green !important;
+  color: white;
+}
+
+.present {
+  background-color: gold !important;
+  color: black;
+}
+
+.absent {
+  background-color: #888 !important;
+  color: white;
+}
+
+
+#hintKey {
+    position: relative;
+    padding: 10px 22px;
+    width: 120px;
+    border-radius: 6px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    background-color: #7d2ae8;
+    transition: all 0.2s ease;
+  }
+  
+  #hintKey:active {
+    transform: scale(0.96);
+  }
+  
+  #hintKey:before,
+  #hintKey:after {
+    position: absolute;
+    content: "";
+    height: 100%;
+    transform: translateX(-50%);
+    z-index: -1000;
+    background-repeat: no-repeat;
+  }
+  
+  #hintKey:hover:before {
+    top: -70%;
+    background-image: radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+      radial-gradient(circle, transparent 20%, #7d2ae8 20%, transparent 30%),
+      radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+      radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+      radial-gradient(circle, transparent 10%, #7d2ae8 15%, transparent 20%),
+      radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+      radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+      radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+      radial-gradient(circle, #7d2ae8 20%, transparent 20%);
+    background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%,
+      10% 10%, 18% 18%;
+    background-position: 50% 120%;
+    animation: greentopBubbles 0.6s ease;
+  }
+@media (max-width: 480px) {
+
+    .keys{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        height:45px;
+        background-color: #f3efe0;
+        width: 35px;
+        padding: 5px;
+        border-radius: 10%;
+    }
+    .descBox{
+        display: block;
+        background-color: #f3efe0;
+        height: 5rem;
+        margin-top: 1rem;
+        padding: 10px;
+        border-radius: 1rem;
+    }
+    .keyboard{
+        height: 20vw;
+        padding: 0px 20px 20px;
+    }
+    .box{
+        height: 65vh;  
+      }
+    #hintKey{
+        width: 120px;
+    }
+}
